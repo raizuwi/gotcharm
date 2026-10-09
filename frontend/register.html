@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Got Charm Trinkets</h1>
+    </header>
+
+    <section class="container">  
+        <form action="http://localhost/GOADTS/frontend/connect.php" method="post"> 
+            <div class="formhead">
+                <h1>Welcome to GotCharm! </h1>
+            </div>
+
+            <div>
+                <input type="email" placeholder="Email" name="Email">
+
+                <div class="regname">
+                    <input type="text" placeholder="First Name" class="name" name="FirstName">
+                    <input type="text" placeholder="Last Name" class="name" name="LastName">
+                </div>
+
+                <input type="text" placeholder="Facebook Name" name="FacebookName">
+                <input type="text" placeholder="Contact No." maxlength="11" inputmode="numeric" pattern="[0-9]{11}" id="ContactNo" name="ContactNo">
+                <textarea class="fulladd" placeholder="Full Address" name="FullAddress"></textarea>
+                <input type="password" placeholder="Password" name="Password">
+
+                <br>
+
+                <div class="logandreg">
+                    <input type="submit" class="btn btn-primary">
+                    <a href="login.html">Login</a>
+                </div>
+            </div>
+        </form>
+   
+    </section>
+
+    <script src="backend/register.js"></script>
+</body>
+</html>
